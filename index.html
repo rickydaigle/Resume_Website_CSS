@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>RickyDaigle.com</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href='https://fonts.googleapis.com/css?family=RobotoDraft' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif;}
+.w3-bar-block .w3-bar-item {padding: 16px;}
+.subtle {background-color: #dcdcdc;}
+.subtlebord {border-color: #dcdcdc;}
+.smaller {padding: 0; margin: 0;}
+.bold {font-weight: bold;}
+.nopes {cursor: not-allowed;}
+.respo1 {}
+@media only screen and (max-width: 600px) {
+  .respo1 {
+     display: none;
+  }
+}
+</style>
+</head>
+
+<body>
+<!-- Top Bar -->
+<div class="w3-bar w3-mobile w3-padding w3-medium w3-center w3-blue w3-bottombar w3-border-white respo1">Inbox - you@yourcompany.com - Micreauxsoft Lookout</div>
+
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-white w3-animate-left w3-card" style="z-index:3;width:320px;" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" title="Close Sidemenu" 
+  class="w3-bar-item w3-button w3-hide-large w3-large">Close <i class="fa fa-remove"></i></a>
+  <a href="mailto:ricky@rickydaigle.com" target="_blank" class="w3-bar-item w3-button w3-white w3-button w3-left-align">New Message <i class="w3-padding fa fa-pencil"></i></a>
+  <a id="myBtn" onclick="myFunc('Demo1')" href="javascript:void(0)" class="w3-bar-item w3-button"><i class="fa fa-inbox w3-margin-right"></i>Inbox (3)<i class="fa fa-caret-down w3-margin-left"></i></a>
+  <div id="Demo1" class="w3-hide w3-animate-left">
+    <a href="javascript:void(0)" class="w3-bar-item w3-button test w3-leftbar w3-border-white w3-hover-border-grey" onclick="openMail('Borge');w3_close();" id="firstTab">
+      <div class="w3-container w3-margin-left">
+        <span class="w3-opacity w3-large">Rick Daigle</span>
+        <p class="smaller bold">Thank you!</h6>
+        <p class="smaller">I want to thank you......</p>
+      </div>
+    </a>
+     <a href="javascript:void(0)" class="w3-bar-item w3-button test w3-leftbar w3-border-white w3-hover-border-grey" onclick="openMail('Jane');w3_close();">
+      <div class="w3-container w3-margin-left">
+        <span class="w3-opacity w3-large">Patricia McPhatty</span>
+        <p class="smaller bold">Re: Recommendation</h6>
+        <p class="smaller">I just scheduled a meeting...</p>
+      </div>
+    </a>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button test w3-leftbar w3-border-white w3-hover-border-grey" onclick="openMail('John');w3_close();">
+      <div class="w3-container w3-margin-left">
+        <span class="w3-opacity w3-large">Buddy T. Minou</span>
+        <p class="smaller bold">Project backlog</h6>
+        <p class="smaller">If we don't find a way...</p>
+      </div>
+    </a>
+  </div>
+  <a class="w3-bar-item w3-button nopes"><i class="fa fa-paper-plane w3-margin-right"></i>Sent</a>
+  <a class="w3-bar-item w3-button nopes"><i class="fa fa-hourglass-end w3-margin-right"></i>Drafts</a>
+  <a class="w3-bar-item w3-button nopes"><i class="fa fa-trash w3-margin-right"></i>Trash</a>
+  <div class="w3-bar w3-bottom w3-small w3-mobile w3-padding w3-center w3-light-grey respo1">&copy; Rick Daigle 2017-2019 - RickyDaigle.com</div>
+</nav>
+
+<!-- Modal that pops up when you click on "Resume" -->
+<div id="id02" class="w3-modal" style="z-index:4">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-padding w3-blue">
+       <span onclick="document.getElementById('id02').style.display='none'"
+       class="w3-button w3-blue w3-right w3-large w3-hover-blue w3-hover-text-red">Close <i class="fa fa-remove"></i></span>
+      <h5>Resume.doc</h5>
+    </div>
+    <div class="w3-panel">
+    <h5 class="w3-border-bottom">Experience</h5>
+    <p><b>Principal Software Engineer, Aerospace/Aeronautics Systems</b> - Northrop Grumman Corporation (4/19 - Current)</p>
+    <p><b>I.T. Systems Engineer, Enterprise Services</b> - Northrop Grumman Corporation (7/16 - 4/19)</p>
+    <p><b>Lead Field Engineer, LWD/MWD D&E</b> - Baker Hughes, Inc. (2/12 - 4/16)</p>
+    <hr>
+    <h5 class="w3-border-bottom">Education</h5> 
+    <p><b>M.S., Systems Engineering</b> - Florida Institute of Technology</p>
+    <p><i>In Progress (4.0 GPA) - Class of 2021</i></p>
+    <p><b>B.S., Computer Information Systems</b> - Florida Institute of Technology</p>
+    <p><i>Summa Cum Laude - Class of 2018</i></p>
+    <hr>
+    <h5 class="w3-border-bottom">Affiliations</h5>
+    <p><b>Associate Member</b> - International Council on Systems Engineering</p>
+    <p><b>Alumni Member</b> - Tau Kappa Epsilon</p>
+    <p><b>Alumni Member</b> - Phi Kappa Phi</p>
+    </div>
+    <div class="w3-container w3-center w3-padding w3-blue">Micreauxsoft Letters</div>
+  </div>
+</div>
+
+<!-- Modal that pops up when you click on "Performance" -->
+<div id="id03" class="w3-modal" style="z-index:4">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-padding w3-blue">
+       <span onclick="document.getElementById('id03').style.display='none'"
+       class="w3-button w3-blue w3-right w3-large w3-hover-blue w3-hover-text-red">Close <i class="fa fa-remove"></i></span>
+      <h5>PerformanceReview.doc</h5>
+    </div>
+    <div class="w3-panel">
+    <p>He is the best!</p>
+    </div>
+    <div class="w3-container w3-center w3-padding w3-blue">Micreauxsoft Letters</div>
+  </div>
+</div>
+
+<!-- Modal that pops up when you click on other buttons -->
+<div id="id04" class="w3-modal" style="z-index:4">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-padding w3-blue">
+       <span onclick="document.getElementById('id04').style.display='none'"
+       class="w3-button w3-blue w3-right w3-large w3-hover-blue w3-hover-text-red">Close <i class="fa fa-remove"></i></span>
+      <h5>MS Lookout Webmail Notification</h5>
+    </div>
+    <div class="w3-panel">
+    <p>Sorry, this feature is not available in the trial version of Micreauxsoft Workplace 2019.  Upgrade today!</p>
+    <hr>
+    <div class="w3-section">
+        <a class="w3-button w3-red w3-margin-bottom w3-right" onclick="document.getElementById('id04').style.display='none'">No Thanks <i class="fa fa-remove"></i></a> 
+    </div>  
+    </div>
+  </div>
+</div>
+
+<!-- Overlay effect when opening the side navigation on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="Close Sidemenu" id="myOverlay"></div>
+
+<!-- Page content -->
+<div class="w3-main" style="margin-left:320px; padding-right:48px;">
+<i class="fa fa-bars w3-button w3-white w3-hide-large w3-xlarge w3-margin-left w3-margin-top" onclick="w3_open()"></i>
+<a href="javascript:void(0)" class="w3-hide-large w3-red w3-button w3-right w3-margin-top w3-margin-right" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-pencil"></i></a>
+
+<div id="Borge" class="w3-container person">
+  <br>
+<div class="w3-container w3-cell w3-cell-middle w3-padding" style="width:5%;">
+  <img class="w3-round  w3-animate-top w3-image" src="images/rick.jpg" style="max-height:100px;">
+</div>
+<div class="w3-container w3-cell w3-cell-middle">
+  <p><i class="fa fa-clock-o"></i> April 12, 2019 7:24 AM</p>
+  <h4 class="smaller">From: Rick Daigle</h4>
+  <i class="fa fa-square" style="color:green;"> Online</i>
+  <h5 class="w3-opacity">Subject: Thank you!</h5>
+</div>
+  <a href="mailto:ricky@rickydaigle.com" target="_blank" class="w3-button w3-light-grey w3-margin-top">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
+  <a href="javascript:void(0)" class="w3-button w3-light-grey w3-margin-top nopes" onclick="document.getElementById('id04').style.display='block'">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
+  <hr>
+  <p>I want to thank you again for giving me the opportunity to discuss what I can do for your team.  As promised, I've attached my resume for your records.</p>
+  <p>Sincerely, <br>Rick</p>
+  <hr>
+  <a href="javascript:void(0)" class="w3-button w3-light-grey" onclick="document.getElementById('id02').style.display='block'">Open Attachment "Resume"<i class="w3-margin-left fa fa-paperclip"></i></a>
+</div>
+
+<div id="Jane" class="w3-container person">
+  <br>
+<div class="w3-container w3-cell w3-cell-middle w3-padding" style="width:5%;">
+  <img class="w3-round w3-animate-top" src="images/avatar5.png" style="max-height:100px;">
+</div>
+<div class="w3-container w3-cell w3-cell-middle">
+  <p><i class="fa fa-clock-o"></i> April 5, 2019 4:11 PM</p>
+  <h4 class="smaller">From: Patricia McPhatty</h4>
+  <i class="fa fa-square" style="color:red;"> Unavailable</i>
+  <h5 class="w3-opacity">Subject: Re: Recommendation</h5>
+</div>
+  <a href="javascript:void(0)" class="w3-button w3-light-grey w3-margin-top nopes" onclick="document.getElementById('id04').style.display='block'">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
+  <a href="javascript:void(0)" class="w3-button w3-light-grey w3-margin-top nopes" onclick="document.getElementById('id04').style.display='block'">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
+  <hr>
+  <p>I just scheduled a meeting for you with an engineer we've been trying to recruit for years.  You'll want to move quickly because we're not the only division after him.</p>
+  <p>I snagged a copy of his last performance review from HR.  See attached for the highlights.</p>
+  <p>Good luck,<br>Pattie</p>
+  <hr>
+  <a href="javascript:void(0)" class="w3-button w3-light-grey" onclick="document.getElementById('id03').style.display='block'">Open Attachment "Performance"<i class="w3-margin-left fa fa-paperclip"></i></a>
+</div>
+
+<div id="John" class="w3-container person">
+  <br>
+<div class="w3-container w3-cell w3-cell-middle w3-padding" style="width:5%;">
+  <img class="w3-round w3-animate-top" src="images/avatar2.png" style="max-height:100px;">
+</div>
+<div class="w3-container w3-cell w3-cell-middle">
+  <p><i class="fa fa-clock-o"></i> March 30, 2019 10:55 AM</p>
+  <h4 class="smaller">From: Buddy T. Minou</h4>
+  <i class="fa fa-square" style="color:red;"> Unavailable</i>
+  <h5 class="w3-opacity">Subject: Project backlog</h5>
+</div>
+  <a href="javascript:void(0)" class="w3-button w3-light-grey w3-margin-top nopes" onclick="document.getElementById('id04').style.display='block'">Reply<i class="w3-margin-left fa fa-mail-reply"></i></a>
+  <a href="javascript:void(0)" class="w3-button w3-light-grey w3-margin-top nopes" onclick="document.getElementById('id04').style.display='block'">Forward<i class="w3-margin-left fa fa-arrow-right"></i></a>
+  <hr>
+  <p>If we don't find a way to turn this project around, the customer is going to cancel our contract.  You know what that means... we might be looking for new jobs.  :-(</p>
+  <p>Maybe we can bring in an experienced tech lead to get us back on track.  Can you reach out to someone you trust for recommendations?</p>
+  <p>-Bud</p>
+</div>
+    
+</div>
+
+<script>
+var openInbox = document.getElementById("myBtn");
+openInbox.click();
+
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+function myFunc(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show"; 
+    x.previousElementSibling.className += " w3-grey";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-grey", "");
+  }
+}
+
+openMail("Borge")
+function openMail(personName) {
+  var i;
+  var x = document.getElementsByClassName("person");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x = document.getElementsByClassName("test");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" subtle", "");
+    x[i].className = x[i].className.replace(" w3-border-grey", "");
+  }
+  document.getElementById(personName).style.display = "block";
+  event.currentTarget.className += " subtle w3-border-grey";
+}
+</script>
+
+<script>
+var openTab = document.getElementById("firstTab");
+openTab.click();
+</script>
+
+</body>
+</html> 
